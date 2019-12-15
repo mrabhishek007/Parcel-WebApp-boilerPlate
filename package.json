@@ -1,0 +1,21 @@
+{
+  "name": "parcel-webapp-bundler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/view/learn.html --out-dir dev",
+    "prebuild": "del -rf prod",
+    "build": "parcel build src/view/learn.html --out-dir prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "sass": "^1.23.7"
+  }
+}
