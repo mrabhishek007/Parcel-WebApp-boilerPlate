@@ -3,6 +3,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"P0P0":[function(require,module,exports) {
 
 },{}],"Y5Mt":[function(require,module,exports) {
-"use strict";var r=require("./helper.js");function t(r,t){if(!(r instanceof t))throw new TypeError("Cannot call a class as a function")}function e(r,t,e){return t in r?Object.defineProperty(r,t,{value:e,enumerable:!0,configurable:!0,writable:!0}):r[t]=e,r}require("../css/styles.css"),require("../css/learning.scss"),console.log("Curr date is ".concat((0,r.getCurrDate)()));var n=function r(){var n=this;t(this,r),e(this,"instanceProperty","bork"),e(this,"boundFunction",function(){return n.instanceProperty})};e(n,"staticProperty","babelIsCool"),e(n,"staticFunction",function(){return n.staticProperty});var s=new n;
+"use strict";var n=require("./helper.js");function r(n,r){if(!(n instanceof r))throw new TypeError("Cannot call a class as a function")}function t(n,r,t){return r in n?Object.defineProperty(n,r,{value:t,enumerable:!0,configurable:!0,writable:!0}):n[r]=t,n}require("../css/styles.css"),require("../css/learning.scss"),console.log("Curr date is ".concat((0,n.getCurrDate)()));var e=function n(){var e=this;r(this,n),t(this,"instanceProperty","bork"),t(this,"boundFunction",function(){return e.instanceProperty})};t(e,"staticProperty","babelIsCool"),t(e,"staticFunction",function(){return e.staticProperty});var o=new e;console.log(o.boundFunction());
 },{"./helper.js":"liby","../css/styles.css":"P0P0","../css/learning.scss":"P0P0"}]},{},["Y5Mt"], null)
-//# sourceMappingURL=/js.76152db1.js.map
+//# sourceMappingURL=/js.904767a0.js.map

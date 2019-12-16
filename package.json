@@ -4,18 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/view/learn.html --out-dir dev",
+    "dev": "parcel src/view/learn.html --out-dir dev --open",
     "prebuild": "del -rf prod",
     "build": "parcel build src/view/learn.html --out-dir prod"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@babel/polyfill": "^7.7.0",
+    "@babel/runtime": "^7.7.6",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.5",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.6",
+    "babel-eslint": "^10.0.3",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.23.7"
   }
 }

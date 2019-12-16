@@ -1,20 +1,22 @@
 Complete configuration to create a web bundler
 
 
-1. Install parcel-bundler using npm
-2. Install sass (for scss to css conversion)
+1. Install parcel-bundler using ( npm install parcel-bundler --save-dev ) Use dev dependency
+2. Install sass (for scss to css conversion) and other babel dependency to use all the features.
 3. Update the package.json script as following to use parcel-builder in dev and prod :::
 
-       "dev": "parcel src/view/learn.html --out-dir dev",   // Where dev is directory name
+       "dev": "parcel src/view/learn.html --out-dir dev --open",   // Where dev is directory name
        "prebuild": "del -rf prod",   // cleaning up prod folder before generating prod files
        "build": "parcel build src/view/learn.html --out-dir prod"  // where prod is directory name
 
        Run npm/yarn  run dev/build to create a https server
 
+
 4. Create a index.js file and connect to the html. now you can use all the latest js syntax of js.
 5. To use scss import in index.js or import directly in html
 6. To use experimental babel  feature like class etc create a ".babelrc" file in root of project similar to package.json
    and use the plugin mentioned in "babeljs.io" to install and enable those features.
+
 
 
 
